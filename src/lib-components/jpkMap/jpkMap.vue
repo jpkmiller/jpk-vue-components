@@ -23,8 +23,7 @@ export default {
   },
   data() {
     return {
-      // https://support.maptiler.com/i722-protect-your-map-key
-      source: TileJSON.constructor({
+      source: new TileJSON({
         url: `https://api.maptiler.com/maps/streets/tiles.json?key=${this.mapTilerKey}`,
         tileSize: 512,
         crossOrigin: 'anonymous'
@@ -37,7 +36,7 @@ export default {
       if (this.coordinates && typeof this.coordinates !== 'undefined') {
         return this.coordinates.centerCoordinates
       }
-      return []
+      return [8.85, 47.76]
     }
   },
   mounted() {
@@ -63,3 +62,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.map {
+  height: 400px;
+}
+</style>

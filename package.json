@@ -1,7 +1,7 @@
 {
   "name": "jpk-vue-components",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.8",
+  "description": "A collection of jpkmiller's custom Vue components.",
   "main": "dist/jpk-vue-components.ssr.js",
   "browser": "dist/jpk-vue-components.esm.js",
   "module": "dist/jpk-vue-components.esm.js",
@@ -10,6 +10,13 @@
     "dist/*",
     "src/**/*.vue"
   ],
+  "contributors": [
+    {
+      "name": "Josef Müller",
+      "url": "https://github.com/jpkmiller"
+    }
+  ],
+  "repository": "jpkmiller/jpk-vue-components",
   "sideEffects": false,
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
@@ -48,7 +55,6 @@
     "node": ">=12"
   },
   "dependencies": {
-    "bootstrap": "^5.1.1",
     "ol": "^6.6.1"
   }
 }
