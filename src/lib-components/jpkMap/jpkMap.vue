@@ -1,20 +1,19 @@
 <template>
-  <div id="map" class="map" />
+  <div id="map" class="map"/>
 </template>
 
 <script>
 import {Map, View} from 'ol'
 import {Tile} from "ol/layer"
 import * as proj from "ol/proj";
-import TileJSON from "ol/source/TileJSON";
+import { TileJSON } from "ol/source";
 
 export default {
   name: 'jpkMap',
   props: {
     coordinates: {
       type: Object,
-      required: false,
-      default: {}
+      required: false
     },
     mapTilerKey: {
       type: String,
@@ -33,7 +32,7 @@ export default {
   },
   computed: {
     centerCoordinates: function () {
-      if (this.coordinates && typeof this.coordinates !== 'undefined') {
+      if (typeof this.coordinates !== 'undefined') {
         return this.coordinates.centerCoordinates
       }
       return [8.85, 47.76]
