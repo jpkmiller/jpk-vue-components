@@ -1,3 +1,5 @@
+echo "Getting current git tag ..."
+
 CURRENT_GIT_TAG=`git describe`
 CURRENT_VERSION_PARTS=(${CURRENT_GIT_TAG//./. })
 
