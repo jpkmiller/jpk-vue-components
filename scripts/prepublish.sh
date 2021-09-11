@@ -15,6 +15,7 @@ npm run build
 
 echo "Setting npm package version ..."
 npm version ${NEW_GIT_TAG}
+npm publish
 
 echo "Setting git tag ..."
 git tag -a ${NEW_GIT_TAG} - m "see CHANGELOG.md for version ${NEW_GIT_TAG}"
