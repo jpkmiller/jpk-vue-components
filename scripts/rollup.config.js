@@ -11,7 +11,7 @@ import PostCSS from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
-// Get browserslist config and remove ie from es build targets
+// Get browserslist config and remove ie from es scripts targets
 const esbrowserslist = fs.readFileSync('./.browserslistrc')
   .toString()
   .split('\n')
