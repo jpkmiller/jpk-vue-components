@@ -31,7 +31,7 @@
     "build:ssr": "cross-env NODE_ENV=production rollup --config scripts/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config scripts/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config scripts/rollup.config.js --format iife",
-    "prepub": "prepublish.sh"
+    "prepub": "./prepublish.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
