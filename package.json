@@ -1,6 +1,6 @@
 {
   "name": "jpk-vue-components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A collection of jpkmiller's custom Vue components.",
   "main": "dist/jpk-vue-components.ssr.js",
   "browser": "dist/jpk-vue-components.esm.js",
