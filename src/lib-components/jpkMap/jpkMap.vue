@@ -18,6 +18,11 @@ export default {
     mapTilerKey: {
       type: String,
       required: true
+    },
+    origin: {
+      type: String,
+      required: false,
+      default: 'anonymous'
     }
   },
   data() {
@@ -25,7 +30,7 @@ export default {
       source: new TileJSON({
         url: `https://api.maptiler.com/maps/streets/tiles.json?key=${this.mapTilerKey}`,
         tileSize: 512,
-        crossOrigin: 'anonymous'
+        crossOrigin: this.origin
       }),
       map: null
     }
